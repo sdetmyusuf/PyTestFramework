@@ -24,6 +24,7 @@ class RegisterPage(BasePage):
         self.type_into(p_word, "p_word_xpath", self.p_word_xpath)
         self.type_into(p_word, "conf_pword_xpath", self.conf_pword_xpath)
         self.click_element("cont_btn_xpath", self.cont_btn_xpath)
+        self.save_screenshot_page()
 
     def validateRegistration (self, registrationType):
         if registrationType.startswith("without privacy policy"):

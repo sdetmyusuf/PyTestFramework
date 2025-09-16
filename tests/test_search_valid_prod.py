@@ -30,3 +30,10 @@ class TestSearchProducts(BaseTest):
         # time.sleep(3)
         # self.driver.find_element(By.XPATH, "//button[@class='btn btn-default btn-lg']").click()
         # time.sleep(3)
+
+
+    def test_message_on_successfull_search(self):
+        search_page = SearchPage(self.driver)
+        search_page.validateUserSearch("iPod Classic")
+
+

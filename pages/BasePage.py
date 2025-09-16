@@ -47,6 +47,7 @@ class BasePage:
         else:
             return False
 
-
-
+    def save_screenshot_page(self):
+        print("Taking screenshot")
+        self.driver.get_screenshot_as_file("Test.png")
 
